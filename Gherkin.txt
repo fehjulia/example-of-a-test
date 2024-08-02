@@ -1,0 +1,19 @@
+#EN
+Feature: Search for a word on Google
+
+  Scenario: Search for the word "teste" on Google
+    Given the user is on the Google search page
+    When the user enters the word "teste" in the search field
+    And clicks the "Search" button
+    Then the user is redirected to the search results page
+    And the search results related to the word "teste" are displayed
+
+    #PT
+    Feature: Pesquisar uma palavra no Google
+
+  Scenario: Pesquisar a palavra "teste" no Google
+    Given o usuário está na página de pesquisa do Google
+    When o usuário insere a palavra "teste" no campo de pesquisa
+    And clica no botão de "Pesquisar"
+    Then o usuário é redirecionado para a página de resultados da pesquisa
+    And os resultados relacionados à pesquisa "teste" são exibidos
